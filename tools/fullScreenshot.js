@@ -55,7 +55,7 @@ console.info('filename:\n', filename);
 
 var isMobile = false;
 
-filename = filename || `full_screenshot_${width}_${height}.png`;
+filename = filename || `/screenshots/full_screenshot_${width}_${height}.png`;
 
 (async() => {
 
@@ -78,7 +78,7 @@ filename = filename || `full_screenshot_${width}_${height}.png`;
 
     await sleep(delay);
 
-    await page.screenshot({path: `/screenshots/${filename}`, fullPage: true});
+    await page.screenshot({path: filename, fullPage: true});
 
     browser.close();
 
