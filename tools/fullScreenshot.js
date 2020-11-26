@@ -51,7 +51,7 @@ let filename = '';
 if (typeof process.argv[5] === 'string') {
     filename = process.argv[5];
 }
-console.info(' filename:\n', filename);
+console.info('filename:\n', filename);
 
 var isMobile = false;
 
